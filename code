@@ -1,0 +1,15 @@
+import random
+word_list = ["father", "mother", "science", "programming", "resistance", "fiction", "condition", "reverse", "computer", "python"]
+random.shuffle(word_list)
+word = (random.sample(word_list[0], len(word_list[0])))
+solution = word_list[0].upper()
+
+secret_word = " ".join(word)
+print(f"the secret word is: {secret_word.upper()}, can you reveal it?")
+
+answer = input(f"Answer here: ").upper()
+
+if answer == solution:
+    print("You're the boss. Though life.")
+else:
+    print("I wish you best luck for the next time dude")
